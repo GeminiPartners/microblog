@@ -1,1 +1,1 @@
-web: gunicorn microblog:app --log-file -
+web: flask db upgrade; flask translate compile; gunicorn geminimicroblog:app --log-file -
